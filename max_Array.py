@@ -28,7 +28,7 @@ if __name__ == '__main__':
     cur_array = []
     for _ in range(size_array):
         cur_array.append(random.randint(0,10000))
-        #cur_array.append(random.choice(string.ascii_letters))
+        
     print(cur_array)
     rez = array_max(cur_array)
     if rez['code'] == 'ok':
