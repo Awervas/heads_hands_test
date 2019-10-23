@@ -12,9 +12,11 @@ def array_max(input_array):
     
     max_value_index = 0
     for i in range(len(input_array)):
-        if input_array[i] > input_array[max_value_index]:
-            max_value_index = i
-
+        try:
+            if input_array[i] > input_array[max_value_index]:
+                max_value_index = i
+        except TypeError:
+            return {'code':'type error'}
     return {
             'code':'ok',
             'max_index_value':max_value_index,
