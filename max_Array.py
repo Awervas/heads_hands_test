@@ -6,7 +6,7 @@ def array_max(input_array):
     if not isinstance(input_array, list):
         return {'code':'is not array'}
     
-    elif input_array:
+    elif not input_array:
         return {'code':'empty array'}
   
     
